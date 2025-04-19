@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import "tailwindcss";
+
+
+/* If using Tailwind classes */
+  .klee-one-regular {
+    font-family: "Klee One", cursive;
+  }
+
+  .sofia {
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+  }  
