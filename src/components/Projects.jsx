@@ -78,7 +78,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="bg-gray-900 min-h-[50vh] mx-auto w-full py-10 px-4 md:px-20 flex flex-col justify-center">
-      <h2 className="text-[32px] font-semibold text-green-400 mb-10">/ my projects</h2>
+      <h2 className="text-[32px] font-semibold text-green-400 mb-4">/ my projects</h2>
 
       {/* Spotlight Projects Carousel */}
       <div className="relative w-full h-72 md:h-96 overflow-hidden rounded-xl flex items-center">
@@ -166,7 +166,7 @@ const Projects = () => {
                 )}
               </div>
             </div>
-            <h3 className="text-lg font-semibold text-white">{project.title}</h3>
+            <h3 className="text-base font-semibold text-white">{project.title}</h3>
             <p className="text-gray-400 text-sm mt-2">{project.desc}</p>
             <p className="text-gray-500 text-xs mt-2">{project.techStack}</p>
           </motion.div>

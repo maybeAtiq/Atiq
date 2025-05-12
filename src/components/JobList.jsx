@@ -62,7 +62,7 @@ const experienceItems = [
 
 
   return (
-    <div className="flex flex-row flex-wrap md:flex-nowrap items-start max-w-4xl w-full">
+    <div className="flex flex-row flex-wrap md:flex-nowrap items-start max-w-4xl w-full space-y-3">
       {/* Left Sidebar (Company Names) */}
       <div className="w-full md:w-1/4 flex md:flex-col overflow-x-auto md:overflow-visible">
         {experienceItems.map((item, i) => (

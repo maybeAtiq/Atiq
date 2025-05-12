@@ -39,12 +39,12 @@ const About = () => {
 
   return (
     <div id="about" className="bg-gray-900 min-h-[50vh] mx-auto w-full py-10 px-4 md:px-20 flex flex-col justify-center">
-        <span className="text-[32px] font-semibold text-green-400 mb-10">/ about me</span>
+        <span className="text-[32px] font-semibold text-green-400 mb-4">/ about me</span>
         <div className="flex flex-row flex-wrap items-start justify-start gap-8 w-fit">
           {/* About Text Section */}
-          <div className="max-w-[600px] text-justify text-lg text-gray-300">
+          <div className="max-w-[600px] text-justify text-base text-gray-300">
             <p className="mb-4">
-              I am currently a <b className="text-white">Frontend Developer</b> at
+              I am currently a <b className="text-white">Software Developer</b> at
               <a href="" className="text-green-400 hover:underline"> Olamax Exchange</a>, working with the Frontend Team.
             </p>
             <p className="mb-4">Here are some technologies I have been working with:</p>
@@ -52,7 +52,7 @@ const About = () => {
             {/* Tech Stack List */}
               <ul className="grid grid-cols-2 gap-3">
               {techStack.map((tech, i) => (
-                <li key={i} className="flex items-center space-x-2 text-lg text-gray-300">
+                <li key={i} className="flex items-center space-x-2 text-base text-gray-300">
                   <img src={tech.logo} alt={tech.name} className="w-6 h-6" />
                   <span>{tech.stack}</span>
                 </li>

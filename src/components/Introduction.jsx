@@ -20,7 +20,7 @@ const Introduction = () => {
           <p className="text-lg md:text-xl text-gray-400 mt-4 text-center">
             conjuring code magic.
           </p>
-          <p className="text-md md:text-lg text-gray-300 mt-4 max-w-2xl text-center">
+          <p className="text-md md:text-base text-gray-300 mt-4 max-w-2xl text-center">
             I'm a software engineer from Nigeria, fascinated by large-scale, high-impact products. 
             I specialize in crafting seamless user experiences on web and mobile.
           </p>
