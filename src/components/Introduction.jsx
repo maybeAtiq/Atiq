@@ -28,7 +28,7 @@ const Introduction = () => {
           {/* Contact Button */}
           <div className="mx-auto w-fit">
           <a 
-            href="mailto:atiqqq0@gmail.com"
+            href="mailto:hello@maybeatiq.dev"
             className="mt-6 inline-flex items-center border border-green-400 text-green-400 px-4 py-4 rounded-lg hover:border-green-600 transition"
           >
             <EmailIcon className="w-5 h-5 mr-2" />

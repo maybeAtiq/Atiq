@@ -8,6 +8,14 @@ import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRound
 
 
 const spotlightProjects = [
+    {
+    title: "SolGen",
+    desc: "A browser extension for batch generation of solana wallets. Supports batch funding and withdrawal",
+    techStack: "Next.js, Solana/web3.js, Tailwind CSS",
+    link: "",
+    open: "",
+    image: "/assets/solgen.png",
+  },
   {
     title: "Press-It!",
     desc: "A free PWA to compress scanned documents to under 500KB.",
@@ -22,14 +30,6 @@ const spotlightProjects = [
     open: "https://retro-reels-ticket.vercel.app/",
     image: "/assets/retro1.png",
   },
-  // {
-  //   title: "SolGen",
-  //   desc: "A chrome extension for generating multiple solana wallets seed phrases at once.",
-  //   techStack: "Next.js, Solana.js",
-  //   link: "",
-  //   open: "",
-  //   image: "",
-  // },
   // {
   //   title: "Street10 Pizza",
   //   desc: "Pizza ordering and delivery website for Street10",
@@ -102,7 +102,7 @@ const Projects = () => {
             <img
               src={spotlightProjects[currentProject].image}
               alt={spotlightProjects[currentProject].title}
-              className="w-full h-full object-contain md:object-fill bg-white"
+              className="w-full h-full object-cover md:object-top"
             />
             <div className="absolute inset-0 bg-black opacity-60 flex flex-col justify-center items-center text-white text-center p-4">
               <h3 className="text-xl font-semibold">{spotlightProjects[currentProject].title}</h3>

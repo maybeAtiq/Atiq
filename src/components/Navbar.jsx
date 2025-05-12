@@ -15,7 +15,7 @@ const NavBar = () => {
                 <a href="#projects">Projects</a>
             </div>
             <div className="flex gap-4 w-full md:w-fit justify-end">
-                <a href="mailto:atiqqq0@gmail.com" className="md:block hidden">
+                <a href="mailto:hello@maybeatiq.dev" className="md:block hidden">
                     <EmailRoundedIcon style={{ fontSize: 20 }}/>
                 </a>
                 <a href="https://github.com/maybeatiq" target="_blank">
