@@ -81,7 +81,7 @@ const Projects = () => {
       <h2 className="text-[32px] font-semibold text-green-400 mb-4">/ my projects</h2>
 
       {/* Spotlight Projects Carousel */}
-      <div className="relative w-full h-72 md:h-96 overflow-hidden rounded-xl flex items-center">
+      <div className="relative w-full h-48 md:h-96 overflow-hidden rounded-xl flex items-center">
 
         <AnimatePresence mode="wait">
           <motion.div
@@ -102,9 +102,9 @@ const Projects = () => {
             <img
               src={spotlightProjects[currentProject].image}
               alt={spotlightProjects[currentProject].title}
-              className="w-full h-full object-cover md:object-top"
+              className="w-full object-cover md:object-center"
             />
-            <div className="absolute inset-0 bg-black opacity-60 flex flex-col justify-center items-center text-white text-center p-4">
+            <div className="absolute inset-0 bg-black opacity-80 flex flex-col justify-center items-center text-white text-center p-4">
               <h3 className="text-xl font-semibold">{spotlightProjects[currentProject].title}</h3>
               <p className="text-sm my-2">{spotlightProjects[currentProject].desc}</p>
               <p className="text-xs text-green-400">{spotlightProjects[currentProject].techStack}</p>
