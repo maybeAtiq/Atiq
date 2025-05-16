@@ -10,7 +10,7 @@ import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRound
 const spotlightProjects = [
     {
     title: "SolGen",
-    desc: "A browser extension for batch generation of solana wallets. Supports batch funding and withdrawal",
+    desc: "A browser extension for batch generation and funding of solana wallets.",
     techStack: "Next.js, Solana/web3.js, Tailwind CSS",
     link: "",
     open: "",
@@ -81,7 +81,7 @@ const Projects = () => {
       <h2 className="text-[32px] font-semibold text-green-400 mb-4">/ my projects</h2>
 
       {/* Spotlight Projects Carousel */}
-      <div className="relative w-full h-48 md:h-96 overflow-hidden rounded-xl flex items-center">
+      <div className="relative w-full h-36 md:h-96 overflow-hidden rounded-xl flex items-center">
 
         <AnimatePresence mode="wait">
           <motion.div
@@ -102,7 +102,7 @@ const Projects = () => {
             <img
               src={spotlightProjects[currentProject].image}
               alt={spotlightProjects[currentProject].title}
-              className="w-full object-cover md:object-center"
+              className="w-full object-cover md:object-contain"
             />
             <div className="absolute inset-0 bg-black opacity-80 flex flex-col justify-center items-center text-white text-center p-4">
               <h3 className="text-xl font-semibold">{spotlightProjects[currentProject].title}</h3>
