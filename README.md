@@ -24,3 +24,5 @@ build for production
  ```bash
  npm run build
  ```
+
+> UI inspired by [Gazi Jarin](https://www.behance.gazijarin.com)
