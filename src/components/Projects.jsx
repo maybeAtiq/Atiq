@@ -23,6 +23,14 @@ const spotlightProjects = [
     open: "https://pressit.onrender.com/",
     image: "/assets/pressit.png",
   },
+    {
+    title: "Street10 Pizza",
+    desc: "Pizza ordering and delivery website for Street10",
+    techStack: "Next.js, MongoDB, AWS",
+    link: "https://github.com/maybeAtiq/street-10-pizza",
+    open: "",
+    image: "/assets/street10.png",
+  },
   {
     title: "Retro Reels Movie Night",
     desc: "A Ticketing site for Retro Reels Movie Night.",
@@ -30,15 +38,6 @@ const spotlightProjects = [
     open: "https://retro-reels-ticket.vercel.app/",
     image: "/assets/retro1.png",
   },
-  // {
-  //   title: "Street10 Pizza",
-  //   desc: "Pizza ordering and delivery website for Street10",
-  //   techStack: "Next.js, MongoDB, AWS",
-  //   link: "https://github.com/maybeAtiq/street-10-pizza",
-  //   open: "",
-  //   image: "/assets/me2.jpg",
-  // },
-
 ];
 
 const otherProjects = [
