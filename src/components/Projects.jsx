@@ -12,8 +12,8 @@ const spotlightProjects = [
     title: "SolGen",
     desc: "A browser extension for batch generation and funding of solana wallets.",
     techStack: "Next.js, Solana/web3.js, Tailwind CSS",
-    link: "",
-    open: "",
+    link: "https://github.com/maybeAtiq/solgen",
+    open: "https://chromewebstore.google.com/detail/solgen/nhpgbeimfdhkiooagihinfofccmfilgp",
     image: "/assets/solgen.png",
   },
   {
