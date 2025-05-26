@@ -52,7 +52,7 @@ const otherProjects = [
     desc: "Tool to enerate QR codes easily.",
     techStack: "Next.js, Tailwind CSS",
     link: "https://github.com/maybeAtiq/QR",
-    open: "https://qr-code-by-atiq.vercel.app/",
+    open: "https://qrgen.maybeatiq.dev/",
   },
 ];
 
