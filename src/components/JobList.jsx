@@ -17,7 +17,7 @@ const experienceItems = [
   {
     company: "Olamax",
     jobTitle: "Frontend Developer @",
-    duration: "Nov 2024 – Present",
+    duration: "Nov 2024 – August 2025",
     desc: [
       "Developed and deployed scalable, production-ready applications integrated with RESTful APIs.",
       "Enhanced web performance and resolved rendering issues to improve user experience.",

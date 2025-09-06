@@ -44,8 +44,7 @@ const About = () => {
           {/* About Text Section */}
           <div className="max-w-[600px] text-justify text-base text-gray-300">
             <p className="mb-4">
-              I am currently a <b className="text-white">Software Developer</b> at
-              <a href="" className="text-green-400 hover:underline"> Olamax Exchange</a>, working with the Frontend Team.
+             I am a <b className="text-white">Software Developer</b> specializing in mobile and frontend development, passionate about building user-friendly and efficient applications.
             </p>
             <p className="mb-4">Here are some technologies I have been working with:</p>
 
