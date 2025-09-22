@@ -27,9 +27,9 @@ const NavBar = () => {
                 <a href="https://medium.com/@defineAtiq" target="_blank">
                     <MediumIcon style={{ fontSize: 20 }}/>
                 </a>
-                <a href="https://x.com/maybeAtiq" target="_blank">
+                {/* <a href="https://x.com/maybeAtiq" target="_blank">
                     <X style={{ fontSize: 20 }}/>
-                </a>
+                </a> */}
             </div>
         </div>
     );

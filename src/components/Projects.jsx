@@ -8,7 +8,17 @@ import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRound
 
 
 const spotlightProjects = [
-    {
+];
+
+const otherProjects = [
+  {
+    title: "Press-It!",
+    desc: "A free PWA to compress scanned documents to under 500KB while retaining quality.",
+    techStack: "Next.js, Node.js",
+    open: "https://pressit.onrender.com/",
+    image: "/assets/pressit.png",
+  },
+  {
     title: "SolGen",
     desc: "A browser extension for batch generation and funding of solana wallets.",
     techStack: "Next.js, Solana/web3.js, Tailwind CSS",
@@ -16,21 +26,14 @@ const spotlightProjects = [
     open: "https://chromewebstore.google.com/detail/solgen/nhpgbeimfdhkiooagihinfofccmfilgp",
     image: "/assets/solgen.png",
   },
-  {
-    title: "Press-It!",
-    desc: "A free PWA to compress scanned documents to under 500KB.",
-    techStack: "Next.js, Node.js",
-    open: "https://pressit.onrender.com/",
-    image: "/assets/pressit.png",
-  },
-    {
-    title: "Street10 Pizza",
-    desc: "Pizza ordering and delivery website for Street10",
-    techStack: "Next.js, MongoDB, AWS",
-    link: "https://github.com/maybeAtiq/street-10-pizza",
-    open: "",
-    image: "/assets/street10.png",
-  },
+  // {
+  //   title: "Street10 Pizza",
+  //   desc: "Pizza ordering and delivery website for Street10",
+  //   techStack: "Next.js, MongoDB, AWS",
+  //   link: "https://github.com/maybeAtiq/street-10-pizza",
+  //   open: "",
+  //   image: "/assets/street10.png",
+  // },
   {
     title: "Retro Reels Movie Night",
     desc: "A Ticketing site for Retro Reels Movie Night.",
@@ -38,21 +41,18 @@ const spotlightProjects = [
     open: "https://retro-reels-ticket.vercel.app/",
     image: "/assets/retro1.png",
   },
-];
-
-const otherProjects = [
-  {
-    title: "MoDet",
-    desc: "A motion detector built using Python and OpenCV.",
-    techStack: "Python",
-    link: "https://github.com/maybeAtiq/Motion-Detection",
-  },
   {
     title: "QR Code Generator",
     desc: "Tool to enerate QR codes easily.",
     techStack: "Next.js, Tailwind CSS",
     link: "https://github.com/maybeAtiq/QR",
     open: "https://qrgen.maybeatiq.dev/",
+  },
+  {
+    title: "MoDet",
+    desc: "A motion detector built using Python and OpenCV.",
+    techStack: "Python",
+    link: "https://github.com/maybeAtiq/Motion-Detection",
   },
 ];
 
@@ -80,7 +80,7 @@ const Projects = () => {
       <h2 className="text-[32px] font-semibold text-green-400 mb-4">/ my projects</h2>
 
       {/* Spotlight Projects Carousel */}
-      <div className="relative w-full h-36 md:h-96 overflow-hidden rounded-xl flex items-center">
+      {/* <div className="relative w-full h-36 md:h-96 overflow-hidden rounded-xl flex items-center">
 
         <AnimatePresence mode="wait">
           <motion.div
@@ -129,10 +129,10 @@ const Projects = () => {
             </button>)
           </>
         )}
-      </div>
+      </div> */}
 
       {/* Navigation Dots */}
-      <div className="flex justify-center mt-4 space-x-3">
+      {/* <div className="flex justify-center mt-4 space-x-3">
         {spotlightProjects.map((_, i) => (
           <button
             key={i}
@@ -140,7 +140,7 @@ const Projects = () => {
             onClick={() => setCurrentProject(i)}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Other Projects Grid */}
       <div className="mt-12 grid md:grid-cols-2 gap-6">

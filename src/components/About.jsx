@@ -27,22 +27,22 @@ const About = () => {
       stack: "Python",
       logo: "/assets/python.png",
     },
-    {
-      stack: "Rust",
-      logo: "/assets/rust.png",
-    },
-    {
-      stack: "Swift",
-      logo: "/assets/swift.png",
-    },
+    // {
+    //   stack: "Rust",
+    //   logo: "/assets/rust.png",
+    // },
+    // {
+    //   stack: "Swift",
+    //   logo: "/assets/swift.png",
+    // },
   ];
 
   return (
     <div id="about" className="bg-gray-900 min-h-[50vh] mx-auto w-full py-10 px-4 md:px-20 flex flex-col justify-center">
         <span className="text-[32px] font-semibold text-green-400 mb-4">/ about me</span>
-        <div className="flex flex-row flex-wrap items-start justify-start gap-8 w-fit">
+        <div className="flex flex-row flex-wrap items-start justify-start gap-8 w-full">
           {/* About Text Section */}
-          <div className="max-w-[600px] text-justify text-base text-gray-300">
+          <div className="w-full text-justify text-base text-gray-300">
             <p className="mb-4">
              I am a <b className="text-white">Software Developer</b> specializing in mobile and frontend development, passionate about building user-friendly and efficient applications.
             </p>
@@ -64,13 +64,13 @@ const About = () => {
           </div>
 
           {/* Profile Image Section */}
-          <div className="md:pl-10 w-fit justify-center md:justify-start hidden md:block">
+          {/* <div className="md:pl-10 w-fit justify-center md:justify-start hidden md:block">
             <img 
               src={profileImage} 
               alt="Profile" 
               className="w-[300px] h-auto rounded-lg shadow-lg transition-transform duration-300 hover:-translate-y-2 md:ml-8"
             />
-          </div>
+          </div> */}
         </div>
     </div>
   );
