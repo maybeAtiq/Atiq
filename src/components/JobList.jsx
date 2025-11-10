@@ -48,16 +48,16 @@ const experienceItems = [
     ],
     tech: ["React", "Next.js", "Node.js", "Zustand", "TypeScript", "Tailwind CSS"],
   },
-  {
-    company: "University of Ilorin",
-    jobTitle: "Embedded Systems Engineer (Student) @",
-    duration: "Jan 2019 – Sep 2023",
-    desc: [
-      "Led a team of five to develop a semi-autonomous firefighting robot equipped with a robotic arm and Android-based remote control.",
-      "Awarded First Runner-Up at the 2023 Opolo Innovative Idea Pitch competition.",
-    ],
-    tech: ["Embedded C", "Java", "XML"],
-  },
+  // {
+  //   company: "University of Ilorin",
+  //   jobTitle: "Embedded Systems Engineer (Student) @",
+  //   duration: "Jan 2019 – Sep 2023",
+  //   desc: [
+  //     "Led a team of five to develop a semi-autonomous firefighting robot equipped with a robotic arm and Android-based remote control.",
+  //     "Awarded First Runner-Up at the 2023 Opolo Innovative Idea Pitch competition.",
+  //   ],
+  //   tech: ["Embedded C", "Java", "XML"],
+  // },
 ];
 
 
