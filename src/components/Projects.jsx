@@ -1,16 +1,21 @@
-import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import FolderOpenRoundedIcon from "@mui/icons-material/FolderOpenRounded";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import ArrowBackIosRoundedIcon from "@mui/icons-material/ArrowBackIosRounded";
-import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 
 
 const spotlightProjects = [
 ];
 
 const otherProjects = [
+    {
+    title: "Atystic",
+    desc: "An art platform for aspiring artists and veterans.",
+    techStack: "Astro",
+    open: "https://www.atystic.com/",
+    image: "/assets/atystic.svg",
+  },
   {
     title: "Press-It!",
     desc: "A free PWA to compress scanned documents to under 500KB while retaining quality.",
@@ -34,13 +39,13 @@ const otherProjects = [
   //   open: "",
   //   image: "/assets/street10.png",
   // },
-  {
-    title: "Retro Reels Movie Night",
-    desc: "A Ticketing site for Retro Reels Movie Night.",
-    techStack: "Next.js,Tailwind CSS, Supabase",
-    open: "https://retro-reels-ticket.vercel.app/",
-    image: "/assets/retro1.png",
-  },
+  // {
+  //   title: "Retro Reels Movie Night",
+  //   desc: "A Ticketing site for Retro Reels Movie Night.",
+  //   techStack: "Next.js,Tailwind CSS, Supabase",
+  //   open: "https://retro-reels-ticket.vercel.app/",
+  //   image: "/assets/retro1.png",
+  // },
   {
     title: "QR Code Generator",
     desc: "Tool to enerate QR codes easily.",

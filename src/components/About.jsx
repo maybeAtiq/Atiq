@@ -59,7 +59,7 @@ const About = () => {
             </ul>
 
             <p className="mt-4">
-              Outside of work, I’m advancing my skills in cybersecurity and data forensics, with the goal of making the digital world safer and more efficient. I also play video games and make art too!
+              Outside of work, I’m advancing my skills in cybersecurity and data forensics, with the goal of making the digital world safer and more efficient. I play video games and make art too!
             </p>
           </div>
 
