@@ -13,7 +13,7 @@ const otherProjects = [
     title: "Atystic",
     desc: "An art platform for aspiring artists and veterans.",
     techStack: "Astro",
-    open: "https://www.atystic.com/",
+    open: "https://www.atystic.vercel.app/",
     image: "/assets/atystic.svg",
   },
   {
