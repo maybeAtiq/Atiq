@@ -1,20 +1,13 @@
-import About from './components/About'
 import NavBar from './components/Navbar';
-import Introduction from './components/Introduction';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
+import Hero from './components/Hero';
 import Footer from './components/Footer'
 
 function App() {
 
   return (
-    <div className='flex flex-col mx-auto items-center justify-center w-full'>
+    <div className='flex font-[lexend] flex-col mx-auto items-center justify-center h-full w-full p-5 md:py-9 md:px-14 gap-12 md:gap-16'>
       <NavBar/>
-      <Introduction/>
-      <About/>
-      <Experience/>
-      <Projects/>
-      <Footer/> 
+      <Hero/>
     </div>
   )
 }
