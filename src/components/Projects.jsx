@@ -9,7 +9,14 @@ const spotlightProjects = [
 ];
 
 const otherProjects = [
-    {
+  {
+    title: "ROS Rentals",
+    desc: "A platform for rentals.",
+    techStack: "NextJS",
+    open: "https://www.ros-rentals.com.ng/",
+    image: "/assets/ros.png",
+  },
+  {
     title: "Atystic",
     desc: "An art platform for aspiring artists and veterans.",
     techStack: "Astro",
