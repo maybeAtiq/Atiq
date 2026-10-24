@@ -1,77 +1,39 @@
-import React from "react";
-import profileImage from "/assets/me2.jpg"; // Ensure the correct path
+import NoteTitle from "./NoteTitle";
+import { CheckIcon } from "./Icons";
+
+const techStack = ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Tailwind CSS", "Python"];
 
 const About = () => {
-  const techStack = [
-    {
-      stack: "Javascript",
-      logo: "/assets/js.png",
-    },
-    {
-      stack: "React.js",
-      logo: "/assets/react.png",
-    },
-    {
-      stack: "NodeJS",
-      logo: "/assets/node.png",
-    },
-    {
-      stack: "Typescript",
-      logo: "/assets/typescript.png",
-    },
-    {
-      stack: "Tailwind CSS",
-      logo: "/assets/tailwind.png",
-    },
-    {
-      stack: "Python",
-      logo: "/assets/python.png",
-    },
-    // {
-    //   stack: "Rust",
-    //   logo: "/assets/rust.png",
-    // },
-    // {
-    //   stack: "Swift",
-    //   logo: "/assets/swift.png",
-    // },
-  ];
-
   return (
-    <div id="about" className="bg-gray-900 min-h-[50vh] mx-auto w-full py-10 px-4 md:px-20 flex flex-col justify-center">
-        <span className="text-[32px] font-semibold text-green-400 mb-4">/ about me</span>
-        <div className="flex flex-row flex-wrap items-start justify-start gap-8 w-full">
-          {/* About Text Section */}
-          <div className="w-full text-justify text-base text-gray-300">
-            <p className="mb-4">
-             I am a <b className="text-white">Software Developer</b> specializing in frontend development, passionate about building user-friendly and efficient applications.
-            </p>
-            <p className="mb-4">Here are some technologies I have been working with:</p>
+    <div>
+      <NoteTitle>meet me.</NoteTitle>
 
-            {/* Tech Stack List */}
-              <ul className="grid grid-cols-2 gap-3">
-              {techStack.map((tech, i) => (
-                <li key={i} className="flex items-center space-x-2 text-base text-gray-300">
-                  <img src={tech.logo} alt={tech.name} className="w-6 h-6" />
-                  <span>{tech.stack}</span>
-                </li>
-              ))}
-            </ul>
+      <div className="mt-6 space-y-5 text-lg leading-relaxed text-ink-soft dark:text-night-soft">
+        <p>
+          I’m a <span className="text-ink dark:text-mist font-medium">software developer</span>{" "}
+          specializing in frontend development, passionate about building user-friendly and
+          efficient applications.
+        </p>
+        <p>
+          Outside of work, I’m advancing my skills in{" "}
+          <span className="text-ink dark:text-mist font-medium">cybersecurity and data forensics</span>,
+          with the goal of making the digital world safer. I also play video games and make art.
+        </p>
+      </div>
 
-            <p className="mt-4">
-              Outside of work, I’m advancing my skills in cybersecurity and data forensics, with the goal of making the digital world safer and more efficient. I play video games and make art too!
-            </p>
-          </div>
-
-          {/* Profile Image Section */}
-          {/* <div className="md:pl-10 w-fit justify-center md:justify-start hidden md:block">
-            <img 
-              src={profileImage} 
-              alt="Profile" 
-              className="w-[300px] h-auto rounded-lg shadow-lg transition-transform duration-300 hover:-translate-y-2 md:ml-8"
-            />
-          </div> */}
-        </div>
+      <h2 className="mt-10 text-xl font-bold tracking-tight text-ink dark:text-mist">
+        technologies i work with.
+      </h2>
+      <ul className="mt-4 space-y-3">
+        {techStack.map((tech) => (
+          <li key={tech} className="flex items-center gap-3 text-lg text-ink dark:text-mist">
+            <span className="grid place-items-center w-[22px] h-[22px] rounded-full bg-note dark:bg-night-note text-white dark:text-ink shrink-0">
+              <CheckIcon />
+            </span>
+            {tech}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
