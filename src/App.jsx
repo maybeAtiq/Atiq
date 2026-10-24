@@ -82,26 +82,15 @@ function App() {
     setSearchIndex(index);
   }, []);
 
-  // True once a note was opened from inside the site, so "back" has a list entry to return to
-  const openedInApp = useRef(false);
-
   const openNote = (id) => {
-    if (window.location.hash === `#${id}`) {
-      setShowList(false);
-      return;
-    }
-    openedInApp.current = true;
-    window.location.hash = id;
+    if (window.location.hash === `#${id}`) setShowList(false);
+    else window.location.hash = id;
   };
 
-  const backToList = () => {
-    if (openedInApp.current) {
-      window.history.back();
-    } else {
-      // Landed straight on a note's link: drop the hash without leaving the site
-      window.history.replaceState(null, "", window.location.pathname + window.location.search);
-      setShowList(true);
-    }
+  // Always lands on the list, whatever was open before; the browser's back button still works as usual
+  const goToList = () => {
+    window.history.pushState(null, "", window.location.pathname + window.location.search);
+    setShowList(true);
   };
 
   const active = notes.find((n) => n.id === activeId);
@@ -126,7 +115,7 @@ function App() {
             <div className="h-12 shrink-0 px-2 md:px-4 flex items-center justify-between border-b border-line/50 dark:border-white/10">
               <button
                 type="button"
-                onClick={backToList}
+                onClick={goToList}
                 className="md:hidden inline-flex items-center px-1 py-1 text-[17px] text-note-ink dark:text-night-note cursor-pointer"
               >
                 <ChevronLeftIcon />
