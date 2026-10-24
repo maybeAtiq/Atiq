@@ -11,13 +11,12 @@ const About = () => {
       <div className="mt-6 space-y-5 text-lg leading-relaxed text-ink-soft dark:text-night-soft">
         <p>
           I’m a <span className="text-ink dark:text-mist font-medium">software developer</span>{" "}
-          specializing in frontend development, passionate about building user-friendly and
-          efficient applications.
+          specialized in bringing ideas to live on the web. If you can think it, I can build it.
         </p>
         <p>
-          Outside of work, I’m advancing my skills in{" "}
+          Outside of work, I’m diving into{" "}
           <span className="text-ink dark:text-mist font-medium">cybersecurity and data forensics</span>,
-          with the goal of making the digital world safer. I also play video games and make art.
+          trying to make the digital world safer. I also play video games and make art.
         </p>
       </div>
 

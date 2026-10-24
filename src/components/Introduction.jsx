@@ -12,8 +12,7 @@ const Introduction = () => {
       </h1>
 
       <p className="mt-6 max-w-lg text-lg leading-relaxed text-ink-soft dark:text-night-soft">
-        Software engineer from Nigeria, fascinated by large-scale, high-impact products.
-        I craft seamless experiences on web and mobile.
+        Welcome, true believers and new comers alike.
       </p>
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
