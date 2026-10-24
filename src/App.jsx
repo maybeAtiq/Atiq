@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { AnimatePresence, MotionConfig, motion } from "framer-motion";
 import Sidebar from "./components/Sidebar";
 import ThemeToggle from "./components/ThemeToggle";
 import ToolbarButton from "./components/ToolbarButton";
@@ -89,7 +88,7 @@ function App() {
   const { Body } = active;
 
   return (
-    <MotionConfig reducedMotion="user">
+    <>
       <div className="h-svh flex md:p-6 lg:p-10">
         <div className="flex-1 max-w-6xl mx-auto flex overflow-hidden bg-white dark:bg-night-paper md:rounded-xl md:border border-line/80 dark:border-night-line md:shadow-2xl md:shadow-black/10">
           <Sidebar
@@ -132,20 +131,12 @@ function App() {
               </div>
             </div>
 
-            <AnimatePresence mode="wait" initial={false}>
-              <motion.div
-                key={active.id}
-                className="flex-1 overflow-y-auto"
-                initial={{ opacity: 0, y: 6 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.18 }}
-              >
-                <article className="min-h-full max-w-3xl mx-auto px-6 md:px-12 py-10 md:py-12 flex flex-col">
-                  <Body />
-                </article>
-              </motion.div>
-            </AnimatePresence>
+            {/* Keyed so each note opens scrolled to the top */}
+            <div key={active.id} className="flex-1 overflow-y-auto">
+              <article className="min-h-full max-w-3xl mx-auto px-6 md:px-12 py-10 md:py-12 flex flex-col">
+                <Body />
+              </article>
+            </div>
           </main>
         </div>
       </div>
@@ -157,7 +148,7 @@ function App() {
           </div>
         ))}
       </div>
-    </MotionConfig>
+    </>
   );
 }
 

@@ -4,7 +4,11 @@ import { ArrowUpRightIcon, ChevronRightIcon, GitHubIcon } from "./Icons";
 
 const featured = {
   title: "State of Emergency",
-  desc: "A browser strategy game set in the situation room. Read the room, weigh the trade-offs, and steer through a crisis before it spirals.",
+  desc: [
+    "A multiplayer game about a fictional leader’s worst day in office.",
+    "Saboteurs try to force him out. Loyalists try to keep him in.",
+    "Pick a side and play with friends.",
+  ],
   open: "https://soe.maybeatiq.dev/",
 };
 
@@ -82,7 +86,13 @@ const FeaturedCard = () => (
       <h2 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-[-0.03em]">
         {featured.title}
       </h2>
-      <p className="mt-5 mx-auto max-w-md text-base leading-relaxed text-white/65">{featured.desc}</p>
+      <p className="mt-5 mx-auto max-w-lg text-base md:text-lg leading-relaxed text-white/65">
+        {featured.desc.map((line) => (
+          <span key={line} className="block">
+            {line}
+          </span>
+        ))}
+      </p>
       <span className="mt-8 inline-flex items-center gap-1 rounded-full bg-white text-[#0b0b0f] px-6 py-3 text-[15px] font-medium transition group-hover:bg-white/90">
         Play now
         <ChevronRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
