@@ -53,52 +53,37 @@ const projects = [
   },
 ];
 
+// Card in the game's own look: dot grid, cream type with a red offset shadow, yellow accents
 const FeaturedCard = () => (
   <a
     href={featured.open}
     target="_blank"
     rel="noopener noreferrer"
-    className="group relative block overflow-hidden rounded-2xl bg-[#0b0b0f] text-white px-6 py-12 md:px-12 md:py-16 text-center"
+    className="@container group block rounded-2xl bg-[#15121c] bg-[radial-gradient(rgba(255,255,255,0.07)_1px,transparent_1px)] bg-[size:22px_22px] px-5 py-12 md:px-10 md:py-14 text-center text-[#f5ecd9] font-soe transition-transform duration-300 hover:-translate-y-1"
   >
-    {/* Soft signal-red glow + radar rings */}
-    <div
-      aria-hidden="true"
-      className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_120%,rgba(255,59,48,0.35),transparent_70%)] transition-opacity duration-500 group-hover:opacity-90"
-    />
-    <div aria-hidden="true" className="pointer-events-none absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2">
-      {[240, 420, 600, 780].map((s) => (
-        <span
-          key={s}
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.07]"
-          style={{ width: s, height: s }}
-        />
-      ))}
-    </div>
-
-    <div className="relative">
-      <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#ff453a]">
-        <span className="relative flex w-2 h-2">
-          <span className="absolute inset-0 rounded-full bg-[#ff453a] animate-ping motion-reduce:hidden opacity-60" />
-          <span className="relative w-2 h-2 rounded-full bg-[#ff453a]" />
-        </span>
-        {featured.kicker}
-      </p>
-      <h2 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-[-0.03em]">
-        {featured.title}
-      </h2>
-      <p className="mt-5 mx-auto max-w-lg text-base md:text-lg leading-relaxed text-white/65">
-        {featured.desc.map((line) => (
-          <span key={line} className="block">
-            {line}
-          </span>
-        ))}
-      </p>
-      <span className="mt-8 inline-flex items-center gap-1 rounded-full bg-white text-[#0b0b0f] px-6 py-3 text-[15px] font-medium transition group-hover:bg-white/90">
-        Play now
-        <ChevronRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+    <h2 className="font-display uppercase leading-[0.95] text-[clamp(2rem,13cqi,4.75rem)]">
+      <span className="block text-[0.82em]" style={{ textShadow: "0.06em 0.06em 0 #c8371f" }}>
+        State
       </span>
-      <p className="mt-4 text-sm text-white/40">soe.maybeatiq.dev</p>
-    </div>
+      <span className="block my-[0.12em] text-[0.32em] text-[#f5c331]">of</span>
+      <span className="block" style={{ textShadow: "0.06em 0.06em 0 #c8371f" }}>
+        Emergency
+      </span>
+    </h2>
+
+    <p className="mt-8 mx-auto max-w-lg text-[clamp(1rem,3.6cqi,1.2rem)] font-bold leading-relaxed">
+      {featured.desc.map((line) => (
+        <span key={line} className="block">
+          {line}
+        </span>
+      ))}
+    </p>
+
+    <span className="mt-10 inline-flex items-center gap-1 rounded-full bg-[#f5c331] text-[#15121c] px-6 py-3 text-[15px] font-bold shadow-[4px_4px_0_#c8371f] transition group-hover:shadow-[2px_2px_0_#c8371f] group-hover:translate-x-0.5 group-hover:translate-y-0.5">
+      Play now
+      <ChevronRightIcon className="w-4 h-4" />
+    </span>
+    <p className="mt-4 text-sm text-[#f5ecd9]/50">soe.maybeatiq.dev</p>
   </a>
 );
 
